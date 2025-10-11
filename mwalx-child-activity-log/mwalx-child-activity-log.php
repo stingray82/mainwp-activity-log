@@ -5,7 +5,7 @@
  * Tested up to:      6.8.3
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0.0-alpha.5
+ * Version:           1.0.0-beta
  * Author:            ReallyUsefulPlugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -17,7 +17,7 @@
 if (!defined('ABSPATH')) exit;
 
 define('RUP_MAINWP_MWALX_MWALX_CHILD_SIG', 'mwalx_v1');
-define('RUP_MAINWP_MWALX_MWALX_CHILD_VERSION', '1.0.0-alpha.5');
+define('RUP_MAINWP_MWALX_MWALX_CHILD_VERSION', '1.0.0-beta');
 
 /** ===== Settings helpers (serialized array: activity-log-settings) ===== */
 
