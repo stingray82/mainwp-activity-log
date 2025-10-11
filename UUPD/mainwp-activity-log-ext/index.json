@@ -1,7 +1,7 @@
 {
   "slug": "mainwp-activity-log-ext",
   "name": "MainWP Activity Log (activitylog.io) Extension",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "author": "reallyusefulplugins.com",
   "author_homepage": "https://reallyusefulplugins.com",
   "requires_php": "8.0",
@@ -13,7 +13,7 @@
     "frequently_asked_questions": "<br/>= How do I modify the settings =<br/>Navigate to the site you want to modify and on the sitetab select activity log",
     "changelog": "= 1.0.0-Alpha (11 October 2025) =<br/>New: Initial Alpha Release"
   },
-  "last_updated": "2025-10-11 16:11:10",
+  "last_updated": "2025-10-11 16:14:08",
   "download_url": "https://github.com/stingray82/mainwp-activity-log/releases/latest/download/mainwp-activity-log-ext.zip",
   "banners": {
     "low": "https://raw.githubusercontent.com/stingray82/mainwp-activity-log/main/uupd/mainwp-activity-log-ext/banner-772x250.png",
