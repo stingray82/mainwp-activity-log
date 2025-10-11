@@ -1,0 +1,16 @@
+Site Based Activity Log Viewing and Settings Manager for MainWP
+
+== Description ==
+
+Site Based Activity Log Viewing and Settings Manager for MainWP
+
+== Installation ==
+
+1. Upload the `mwalx-child-activity-log` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Configure the plugin settings it is located in the Simply Static Menu
+
+== Frequently Asked Questions ==
+
+= How do I modify the settings =
+Navigate to the site you want to modify and on the sitetab select activity log in Main WP
