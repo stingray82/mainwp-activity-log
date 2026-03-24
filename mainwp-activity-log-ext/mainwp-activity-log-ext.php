@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       MainWP Activity Log (activitylog.io) Extension
  * Description:       Site Based Activity Log Viewing and Settings Manager for MainWP
- * Tested up to:      6.8.3
+ * Tested up to:      6.9.4
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0.0-beta
+ * Version:           1.0
  * Author:            ReallyUsefulPlugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) exit;
  * IMPORTANT: MainWP wants the ABSOLUTE PATH of the main plugin file as the
  * extension identifier. We expose it as RUP_MAINWP_MWALX_MWALX_MAIN_FILE and reuse it everywhere.
  */
-define('RUP_MAINWP_MWALX_MWALX_VERSION', '1.0.0-beta');
+define('RUP_MAINWP_MWALX_MWALX_VERSION', '1.0');
 define('RUP_MAINWP_MWALX_MWALX_SLUG', 'mainwp-activity-log-ext');
 define('RUP_MAINWP_MWALX_MWALX_MAIN_FILE', __FILE__);                  
 define('RUP_MAINWP_MWALX_MWALX_PLUGIN_URL', plugins_url('', __FILE__));
@@ -41,6 +41,7 @@ $GLOBALS['mainWPExtensionActivator'] = new \RUP_MAINWP_MWALX\MWALX\RUP_MAINWP_MW
 add_action( 'plugins_loaded', function() {
     require_once __DIR__ . '/inc/updater.php';
     $updater_config = [
+    	'vendor'	  => 'RUP',
         'plugin_file' => plugin_basename( __FILE__ ),
         'slug'        => 'mainwp-activity-log-ext',
         'name'        => 'MAINWP Activity Log Exention',
@@ -49,7 +50,7 @@ add_action( 'plugins_loaded', function() {
         'allow_prerelease' => true,
         'server'      => 'https://raw.githubusercontent.com/stingray82/mainwp-activity-log/main/UUPD/mainwp-activity-log-ext/index.json',
     ];
-    \RUP\Updater\Updater_V1::register( $updater_config );
+    \RUP\Updater\Updater_V2::register( $updater_config );
 }, 20);
 
 /** MainWP icon */

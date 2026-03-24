@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       MainWP Activity Log (activitylog.io) Child
  * Description:       Site Based Activity Log Viewing and Settings Manager for MainWP
- * Tested up to:      6.8.3
+ * Tested up to:      6.9.4
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0.0-beta
+ * Version:           1.0
  * Author:            ReallyUsefulPlugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -17,7 +17,7 @@
 if (!defined('ABSPATH')) exit;
 
 define('RUP_MAINWP_MWALX_MWALX_CHILD_SIG', 'mwalx_v1');
-define('RUP_MAINWP_MWALX_MWALX_CHILD_VERSION', '1.0.0-beta');
+define('RUP_MAINWP_MWALX_MWALX_CHILD_VERSION', '1.0');
 
 /** ===== Settings helpers (serialized array: activity-log-settings) ===== */
 
@@ -235,6 +235,7 @@ add_filter('mainwp_child_extra_execution', function($information, $post){
 add_action( 'plugins_loaded', function() {
     require_once __DIR__ . '/inc/updater.php';
     $updater_config = [
+    	'vendor'	  => 'RUP',
         'plugin_file' => plugin_basename( __FILE__ ),
         'slug'        => 'mwalx-child-activity-log',
         'name'        => 'MAINWP Activity Log Child',
@@ -243,5 +244,5 @@ add_action( 'plugins_loaded', function() {
         'allow_prerelease' => true,
         'server'      => 'https://raw.githubusercontent.com/stingray82/mainwp-activity-log/main/UUPD/mwalx-child-activity-log/index.json',
     ];
-    \RUP\Updater\Updater_V1::register( $updater_config );
+    \RUP\Updater\Updater_V2::register( $updater_config );
 }, 20);
