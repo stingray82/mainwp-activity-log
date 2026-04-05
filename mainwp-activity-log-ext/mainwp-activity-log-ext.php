@@ -60,3 +60,10 @@ add_filter('mainwp_child_stats_get_plugin_info', function($info, $slug) {
     }
     return $info;
 }, 10, 2);
+
+add_filter('uupd/allow_prerelease', function ($allow, $vendor, $slug) {
+    if ($vendor === 'rup' && $slug === 'mainwp-activity-log-ext') {
+        return get_option('mainwp_activity_log_ext_allow_prerelease') === 'yes';
+    }
+    return $allow;
+}, 5, 3);
