@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       MainWP Activity Log (activitylog.io) Extension
  * Description:       Site Based Activity Log Viewing and Settings Manager for MainWP
- * Tested up to:      6.9.4
+ * Tested up to:      7.0.2
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            ReallyUsefulPlugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) exit;
  * IMPORTANT: MainWP wants the ABSOLUTE PATH of the main plugin file as the
  * extension identifier. We expose it as RUP_MAINWP_MWALX_MWALX_MAIN_FILE and reuse it everywhere.
  */
-define('RUP_MAINWP_MWALX_MWALX_VERSION', '1.0');
+define('RUP_MAINWP_MWALX_MWALX_VERSION', '1.0.1');
 define('RUP_MAINWP_MWALX_MWALX_SLUG', 'mainwp-activity-log-ext');
 define('RUP_MAINWP_MWALX_MWALX_MAIN_FILE', __FILE__);                  
 define('RUP_MAINWP_MWALX_MWALX_PLUGIN_URL', plugins_url('', __FILE__));

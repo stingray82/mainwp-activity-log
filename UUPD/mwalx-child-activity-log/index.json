@@ -1,19 +1,19 @@
 {
   "slug": "mwalx-child-activity-log",
   "name": "MainWP Activity Log (activitylog.io) Child",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "reallyusefulplugins.com",
   "author_homepage": "https://reallyusefulplugins.com",
   "requires_php": "8.0",
   "requires": "6.5",
-  "tested": "6.9.4",
+  "tested": "7.0.2",
   "sections": {
     "description": "<br/>Site Based Activity Log Viewing and Settings Manager for MainWP",
     "installation": "<br/>1. Upload the `mainwp-activity-log-ext` folder to the `/wp-content/plugins/` directory.<br/>2. Activate the plugin through the 'Plugins' menu in WordPress.<br/>3. Configure the plugin settings it is located in the Simply Static Menu",
     "frequently_asked_questions": "<br/>= How do I modify the settings =<br/>Navigate to the site you want to modify and on the sitetab select activity log",
-    "changelog": "= 1.0.0 (24 March 2026) =<br/>New: Full Release<br/><br/><br/>= 1.0.0-Beta (11 October 2025) =<br/>New: Initial Beta Release<br/><br/>= 1.0.0-Alpha (11 October 2025) =<br/>New: Initial Alpha Release"
+    "changelog": "= 1.0.1 July 2026 =<br/>Updated: UUPD Dependency Updated to Version 2.0 Stable<br/><br/>= 1.0.0 (24 March 2026) =<br/>New: Full Release<br/><br/>= 1.0.0-Beta (11 October 2025) =<br/>New: Initial Beta Release<br/><br/>= 1.0.0-Alpha (11 October 2025) =<br/>New: Initial Alpha Release"
   },
-  "last_updated": "2026-03-24 11:40:01",
+  "last_updated": "2026-07-24 10:16:38",
   "download_url": "https://github.com/stingray82/mainwp-activity-log/releases/latest/download/mwalx-child-activity-log.zip",
   "banners": {
     "low": "https://raw.githubusercontent.com/stingray82/mainwp-activity-log/main/uupd/mwalx-child-activity-log/banner-772x250.png",
